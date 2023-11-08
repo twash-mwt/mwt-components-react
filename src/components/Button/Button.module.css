@@ -1,0 +1,38 @@
+.btn {
+    text-align: center;
+    padding: 24px;
+    border: solid;
+    border-width: 1px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+}
+
+.small {
+    height: 10px;
+    width: 60px;
+}
+
+.medium {
+    height: 14px;
+    width: 100px;
+}
+
+.large {
+    height: 24px;
+    width: 200px;
+}
+
+.primary {
+    background-color: blue;
+}
+
+.secondary {
+    background-color: red;
+}
+
+.tertiary {
+    background-color: green;
+}
