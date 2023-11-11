@@ -19,4 +19,14 @@ interface ButtonProps {
 }
 declare const Button: (props: React.PropsWithChildren<ButtonProps>) => React.JSX.Element;
 
-export { Button, ButtonKind, type ButtonProps, ButtonSize };
+interface CarouselItem {
+    src: string;
+    onClick: Function;
+}
+interface ImageCarouselProps {
+    carouselItems: CarouselItem[];
+    itemsPerPage: number;
+}
+declare const ImageCarousel: ({ carouselItems, itemsPerPage }: ImageCarouselProps) => React.JSX.Element;
+
+export { Button, ButtonKind, type ButtonProps, ButtonSize, ImageCarousel, type ImageCarouselProps };
