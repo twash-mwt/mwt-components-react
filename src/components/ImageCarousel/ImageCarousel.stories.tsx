@@ -17,7 +17,7 @@ type Story = StoryObj<typeof ImageCarousel>;
 const props: ImageCarouselProps = {
     itemsPerPage: 3,
     carouselItems:[{
-        imgSrc: 'https://picsum.photos/seed/1/200/300',
+        imgSrc: 'https://picsum.photos/seed/1/500/100',
         link: 'https://www.google.com',
         target: '_blank',
     },{
