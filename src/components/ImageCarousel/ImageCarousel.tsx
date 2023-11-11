@@ -17,19 +17,22 @@ interface ImageCarouselProps {
     itemsPerPage: number;
 }
 
-const ImageCarousel = ({ carouselItems, itemsPerPage }: ImageCarouselProps) => {
+const DEFAULT_CAROUSEL_ITEMS: CarouselItem[] = [{ imgSrc: "", link: "", target: ""}]
+
+const ImageCarousel = ({ carouselItems = DEFAULT_CAROUSEL_ITEMS, itemsPerPage }: ImageCarouselProps) => {
     const [currentPage, setCurrentPage] = useState<number>(1);
     const [carouselItemsInView, setCarouselItemsInView] = useState<CarouselItem[]>([]);
 
     useEffect(() => {
         let nodes: any = [];
-        for(let i = 0; i < Math.min(itemsPerPage, carouselItems.length); i++) {
-            const index = (currentPage-1) % carouselItems.length + i;
+        const numberOfItems = carouselItems?.length || 0;
+        for(let i = 0; i < Math.min(itemsPerPage, numberOfItems); i++) {
+            const index = (currentPage - 1) % numberOfItems + i;
             const item = carouselItems[index]
             if(item) {
                 nodes.push(carouselItems[index])
-            } else if(index >= carouselItems.length) {
-                nodes.push(carouselItems[index % carouselItems.length])
+            } else if(index >= numberOfItems) {
+                nodes.push(carouselItems[index % numberOfItems])
             }
         }
         setCarouselItemsInView(nodes);
@@ -45,7 +48,7 @@ const ImageCarousel = ({ carouselItems, itemsPerPage }: ImageCarouselProps) => {
             setCurrentPage(currentPage + 1);
         }
     }
-    
+
     return <div className={styles.container}>
         <div className={styles.navButton} onClick={() => handleClick(Direction.BACKWARD)}>&#8672;</div>
         <div className={styles.itemsContainer}>{
