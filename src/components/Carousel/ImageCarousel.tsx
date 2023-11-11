@@ -54,9 +54,9 @@ const ImageCarousel = ({ carouselItems = DEFAULT_CAROUSEL_ITEMS, itemsPerPage }:
     return <div className={styles.container}>
         <div className={styles.navButton} onClick={() => handleClick(Direction.BACKWARD)}>&#8672;</div>
         <div className={styles.itemsContainer}>{
-            carouselItemsInView.map(({ imgSrc, link, target, width = 200, height = 300 }: CarouselItem, index) => 
+            carouselItemsInView.map(({ imgSrc, link, target }: CarouselItem, index) => 
                 <div key={index} className={styles.item}>
-                    <a href={link} target={target}><img width={width} height={height} src={imgSrc} /></a>
+                    <a href={link} target={target}><img className={styles.image} src={imgSrc} /></a>
                 </div>
             )}
         </div>

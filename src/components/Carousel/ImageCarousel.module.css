@@ -26,8 +26,14 @@
 
 .item {
     display: flex;
-    width: 200px;
-    height: 300px;
     align-items: center;
     justify-content: center;
+    width: 200px;
+    height: 300px;
+}
+
+.image {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
 }
