@@ -17,20 +17,25 @@ type Story = StoryObj<typeof ImageCarousel>;
 const props: ImageCarouselProps = {
     itemsPerPage: 3,
     carouselItems:[{
-        src: 'https://picsum.photos/seed/1/200/300',
-        onClick: () => {},
+        imgSrc: 'https://picsum.photos/seed/1/200/300',
+        link: 'https://www.google.com',
+        target: '_blank',
     },{
-        src: 'https://picsum.photos/seed/2/200/300',
-        onClick: () => {},
+        imgSrc: 'https://picsum.photos/seed/2/200/300',
+        link: 'https://www.google.com',
+        target: '_blank',
     },{
-        src: 'https://picsum.photos/seed/3/200/300',
-        onClick: () => {},
+        imgSrc: 'https://picsum.photos/seed/3/200/300',
+        link: 'https://www.google.com',
+        target: '_blank',
     },{
-        src: 'https://picsum.photos/seed/4/200/300',
-        onClick: () => {},
+        imgSrc: 'https://picsum.photos/seed/4/200/300',
+        link: 'https://www.google.com',
+        target: '_blank',
     },{
-        src: 'https://picsum.photos/seed/5/200/300',
-        onClick: () => {},
+        imgSrc: 'https://picsum.photos/seed/5/200/300',
+        link: 'https://www.google.com',
+        target: '_blank',
     }
 ]}
 

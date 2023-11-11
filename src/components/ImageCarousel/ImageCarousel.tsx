@@ -7,8 +7,9 @@ enum Direction {
 }
 
 interface CarouselItem {
-    src: string;
-    onClick: Function;
+    imgSrc: string;
+    link: string;
+    target: string;
 }
 
 interface ImageCarouselProps {
@@ -44,12 +45,13 @@ const ImageCarousel = ({ carouselItems, itemsPerPage }: ImageCarouselProps) => {
             setCurrentPage(currentPage + 1);
         }
     }
+    
     return <div className={styles.container}>
         <div className={styles.navButton} onClick={() => handleClick(Direction.BACKWARD)}>&#8672;</div>
         <div className={styles.itemsContainer}>{
-            carouselItemsInView.map(({ src, onClick }: CarouselItem, index) => 
-                <div onClick={() => onClick} key={index} className={styles.item}>
-                    <img src={src} />
+            carouselItemsInView.map(({ imgSrc, link, target }: CarouselItem, index) => 
+                <div key={index} className={styles.item}>
+                    <a href={link} target={target}><img src={imgSrc} /></a>
                 </div>
             )}
         </div>
