@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.navButton {
+    display: flex;
+    font-size: 48px;
+    cursor: pointer;
+    user-select: none; /* standard syntax */
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
+}
+
+.pageTracker {
+    display: flex;
+}
+
+.itemsContainer {
+    display: flex;
+    gap: 12px;
+}
+
+.item {
+    display: flex;
+    width: 200px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+}
