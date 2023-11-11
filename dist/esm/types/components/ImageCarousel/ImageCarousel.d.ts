@@ -1,7 +1,8 @@
 import React from "react";
 interface CarouselItem {
-    src: string;
-    onClick: Function;
+    imgSrc: string;
+    link: string;
+    target: string;
 }
 interface ImageCarouselProps {
     carouselItems: CarouselItem[];

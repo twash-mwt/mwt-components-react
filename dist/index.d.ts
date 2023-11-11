@@ -20,8 +20,9 @@ interface ButtonProps {
 declare const Button: (props: React.PropsWithChildren<ButtonProps>) => React.JSX.Element;
 
 interface CarouselItem {
-    src: string;
-    onClick: Function;
+    imgSrc: string;
+    link: string;
+    target: string;
 }
 interface ImageCarouselProps {
     carouselItems: CarouselItem[];
