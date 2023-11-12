@@ -1,0 +1,85 @@
+
+Chromatic CLI v9.0.0
+https://www.chromatic.com/docs/cli
+
+Authenticating with Chromatic
+    → Connecting to https://index.chromatic.com
+Authenticated with Chromatic
+    → Using project token '****************8192'
+Retrieving git information
+Retrieved git information
+    → Commit '98feb7f' on branch 'main'; found 1 parent build
+Collecting Storybook metadata
+Collected Storybook metadata
+    → Storybook 7.5.3 for React; using the @storybook/react-webpack5 builder (7.5.3); supported addons found: Links, Essentials, Interactions
+Initializing build
+Initialized build
+    → Build 3 initialized
+Building your Storybook
+    → Running command: npm run build-storybook -- --output-dir /var/folders/97/2_zrqw8x4p12tkb0zm5g4k1r0000gp/T/chromatic--88233-bf4HuyGNfmVL
+Storybook built in 5 seconds
+    → View build log at /Users/twash/workspace/work/poc/mwt-design/react/build-storybook.log
+Publish your built Storybook
+    → Validating Storybook files
+Publishing your built Storybook
+    → Retrieving target location
+    → Starting publish
+    → [                    ] 1%
+    → [==                  ] 10%
+    → [====                ] 18%
+    → [====                ] 19%
+    → [====                ] 20%
+    → [====                ] 21%
+    → [=====               ] 24%
+    → [=====               ] 25%
+    → [======              ] 29%
+    → [======              ] 30%
+    → [=======             ] 34%
+    → [=======             ] 35%
+    → [========            ] 38%
+    → [========            ] 41%
+    → [=========           ] 43%
+    → [=========           ] 46%
+    → [==========          ] 48%
+    → [==========          ] 50%
+    → [==========          ] 51%
+    → [===========         ] 53%
+    → [===========         ] 56%
+    → [===========         ] 57%
+    → [============        ] 58%
+    → [============        ] 62%
+    → [=============       ] 65%
+    → [==============      ] 70%
+    → [===============     ] 73%
+    → [===============     ] 76%
+    → [================    ] 80%
+    → [=================   ] 85%
+    → [==================  ] 89%
+    → [==================  ] 92%
+    → [=================== ] 94%
+    → [=================== ] 97%
+    → [====================] 98%
+    → [====================] 99%
+    → [====================] 100%
+Publish complete in 6 seconds
+    → View your Storybook at https://65501b4e333ce020d9cafc42-nwmdrhdvuz.chromatic.com
+Verifying your Storybook
+    → This may take a few minutes
+Started build 3
+    → View build details at https://www.chromatic.com/build?appId=65501b4e333ce020d9cafc42&number=3
+Running 5 tests
+    → This may take a few minutes
+ℹ Speed up Continuous Integration
+Your project is linked to GitHub so Chromatic will report results there.
+This means you can pass the --exit-once-uploaded flag to skip waiting for build results.
+Read more here: https://www.chromatic.com/docs/cli#chromatic-options
+    → [====                ] 1/5  Button › Small Primary 
+    → [========            ] 2/5  Button › Medium Secondary 
+    → [============        ] 3/5  Button › Large Tertiary 
+    → [================    ] 4/5  ImageCarousel › Default 
+    → [====================] 5/5  ImageCarousel › More Per Page 
+✖ Found 1 visual change: Review the changes at https://www.chromatic.com/build?appId=65501b4e333ce020d9cafc42&number=3
+
+ℹ For CI/CD use cases, this command failed with exit code 1
+Pass --exit-zero-on-changes to succeed this command regardless of changes.
+Pass --auto-accept-changes to succeed and automatically accept any changes.

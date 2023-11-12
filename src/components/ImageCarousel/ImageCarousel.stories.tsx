@@ -42,3 +42,7 @@ const props: ImageCarouselProps = {
 export const Default: Story = {
     render: () => <ImageCarousel {...props} />,
 };
+
+export const MorePerPage: Story = {
+    render: () => <ImageCarousel {...props} itemsPerPage={5} />,
+};
